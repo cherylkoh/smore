@@ -1,0 +1,387 @@
+# <!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>smore / explore some more</title>
+	<meta name="description" content="explore some more.">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.app, .card, .icon, .logo, .web'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+<div id="header">
+	<b>smore</b></div>
+	<div id="tag">
+	explore some more.</div>
+</head>
+<body>
+	</div>
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
+			<li><span class="filter" data-filter=".app">Beach</span></li>
+			<li><span class="filter" data-filter=".card">Mountain</span></li>
+			<li><span class="filter" data-filter=".icon">River</span></li>
+			<li><span class="filter" data-filter=".logo">Lake</span></li>
+			<li><span class="filter" data-filter=".web">Forest</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<img src="img/portfolios/logo/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mount Buffalo NP</a>
+							<span class="text-category">LAKE</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/app/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Gippsland Lakes</a>
+							<span class="text-category">BEACH</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Toolangi SP</a>
+							<span class="text-category">FOREST</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">The Grampians</a>
+							<span class="text-category">MOUNTAIN</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/app/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Johanna Beach</a>
+							<span class="text-category">BEACH</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cathedral Ranges</a>
+							<span class="text-category">MOUNTAIN</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mount Buffalo</a>
+							<span class="text-category">MOUNTAIN</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lake Eildon</a>
+							<span class="text-category">LAKE</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																							
+			
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/app/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Wilsons Promontory</a>
+							<span class="text-category">BEACH</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>														
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mount Feathertop</a>
+							<span class="text-category">MOUNTAIN</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/6.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Green Lake</a>
+							<span class="text-category">LAKE</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/7.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lake Elizabeth</a>
+							<span class="text-category">LAKE</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>													
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Yarra Ranges NP</a>
+							<span class="text-category">RIVER</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>							
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Great Otway NP</a>
+							<span class="text-category">FOREST</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cumberland River</a>
+							<span class="text-category">RIVER</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Kinglake NP</a>
+							<span class="text-category">FOREST</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/icon/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Echuca</a>
+							<span class="text-category">RIVER</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/icon/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Errinundra NP</a>
+							<span class="text-category">RIVER</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bunyip SP</a>
+							<span class="text-category">FOREST</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lake Fyans</a>
+							<span class="text-category">LAKE</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lake Burrombeet</a>
+							<span class="text-category">LAKE</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																												
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Wye River</a>
+							<span class="text-category">RIVER</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mount Beauty</a>
+							<span class="text-category">MOUNTAIN</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Nagambie Lakes</a>
+							<span class="text-category">LAKE</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+										
+			
+		</div>
+		
+	</div><!-- container -->
+
+</body>
+</html>
